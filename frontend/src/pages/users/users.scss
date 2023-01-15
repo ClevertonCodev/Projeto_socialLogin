@@ -1,0 +1,50 @@
+.containeer{
+ max-width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#senha{
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.formUser{
+  margin: auto;
+  width:30%;
+}
+
+@media (max-width: 767px) {
+.containeer{
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    .formUser{
+      margin: auto;
+      width:100%;
+    }
+  }
+ 
+}
+  .thead{
+    background-color:  #151a1d;
+    color: #fff;
+    text-align: center;
+  }
+  .tr:nth-child(even) {
+    background:rgb(181, 181, 181);
+  }
+  .table{
+    max-width: fit-content;
+    overflow: hidden;
+    color: #fff;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    border: solid 1px;
+
+ }
+ .rolagem{
+  height: 27rem;
+  overflow-y: auto;
+} 

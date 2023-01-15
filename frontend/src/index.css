@@ -1,0 +1,24 @@
+@charset "UTF-8";
+* {
+margin: 0;
+padding: 0;
+}
+
+:root {
+  --cor0:#104566;
+  --cor1:#6C90A4;
+  --cor2: #7CA4BC;
+  --cor3: #C4D0D8;
+  --cor3: #151a1d;
+  --cor4: #8D9CA6;
+   }
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

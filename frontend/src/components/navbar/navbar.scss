@@ -1,0 +1,111 @@
+
+#navbar{
+   
+    background-color: #151a1d; 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.dropdown-menu {
+
+    background-color: #151a1d; 
+}
+.navbar-toggler-icon{
+    color: white;
+    
+}
+
+.container-fluid{
+    display: flex;
+    
+}
+
+
+#name{
+ margin-left: 45%;
+}
+.navbar-brand{
+    
+    color: #fff;
+    margin: auto;
+    margin-left: 1%;
+    
+    
+}
+
+#botao{
+    color: #fff;
+    cursor: pointer;
+}
+
+#botao:hover{
+    color: #8D9CA6;
+     background: #151a1d;
+}
+
+#botao:focus{
+    color: #8D9CA6;
+    background: #151a1d;
+}
+
+#botao:active{
+    background: #151a1d;
+}
+
+.navbar-brand:hover{
+    
+    color:#8D9CA6;
+    
+}
+
+
+
+.navbar-brand:active{
+    
+    color: none;
+     background-color: #8D9CA6;
+};
+    
+
+#inicio{
+    color: #fff;
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    color: #8D9CA6;
+    background: #151a1d;
+  } 
+
+
+.navbar-toggler{
+    background-color: #fff;
+}
+#navbarNav{
+   
+    margin-right: -5rem;
+}
+@media (max-width: 1000px) {
+.navbar-nav{
+    align-items: center;
+    justify-content: space-between;
+    visibility: visible;
+    overflow-x: auto; 
+     
+}
+
+#rotas{
+    height:1000%;
+    
+}
+
+#name{
+    margin-left: 0%;
+   }
+ 
+}
