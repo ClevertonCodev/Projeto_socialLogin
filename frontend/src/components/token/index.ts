@@ -1,5 +1,3 @@
-import { useCookies } from "react-cookie";
-import Authorization from "./auth";
 
 function TokenJWT(){
     let token:any = document.cookie.split(';').find(indice => {

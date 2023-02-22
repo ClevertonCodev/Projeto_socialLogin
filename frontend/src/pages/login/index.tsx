@@ -40,7 +40,7 @@ const Login = () => {
                 access_token: tokenGoogle
             }
         })
-            .then((responseT: { data: any; }) => {
+            .then((responseT: { data: { access_token: string; } }) => {
                 
                     localStorage.setItem("token", responseT.data.access_token)
                     document.cookie = 'token=' + responseT.data.access_token;

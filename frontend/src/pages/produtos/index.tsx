@@ -171,16 +171,24 @@ const Produtos = () => {
                             </span>
                         </div>
                         <div className="wrap-input100 validate-input" data-validate="amountis required">
-                            { id? <input id="decimal" className="input100"  type="text"
-                            value={price}
-                            onChange={evento => setPrice(evento.target.value)} 
-                            required/>:false
+                            { id?
+                                <input id="decimal" className="input100"  type="text"
+                                value={price}
+                                onChange={evento => setPrice(evento.target.value)} 
+                                required/>:
+                                
+                                <input id="decimal" className="input100"  type="text"
+                                onKeyUp={(e) => mascaraMoeda(e)} 
+                                  required/>
                             }
-                            { id? false : 
-                            <input id="decimal" className="input100"  type="text"
-                            onKeyUp={(e) => mascaraMoeda(e)} 
-                              required/>
-                            }
+                            {/* { !id && (
+
+                                 <input id="decimal" className="input100"  type="text"
+                                 onKeyUp={(e) => mascaraMoeda(e)} 
+                                   required/>
+                                
+                            ) 
+                            } */}
                             <span className="focus-input100"></span>
                         </div>
                     </div>
