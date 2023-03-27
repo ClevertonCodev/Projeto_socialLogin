@@ -20,8 +20,8 @@ const Login = () => {
     }
     
     const login = useGoogleLogin({
-        onSuccess: async respose =>
-            setGoogle(respose.access_token)
+        onSuccess: async response =>
+            setGoogle(response.access_token)
     });
 
     if (tokenGoogle) {
@@ -54,7 +54,8 @@ const Login = () => {
             });
     }
    
-    if (tokenFacebook) {
+    
+    if (tokenFacebook ) {
         axios({
             method: 'post',
             url: 'http://127.0.0.1:8000/oauth/token',
@@ -65,7 +66,7 @@ const Login = () => {
             data: {
                 grant_type: 'social',
                 client_id: 2,
-                client_secret: 'm3RSoLUrc6dMSGbQiL0no2vQ7M7M7CY6f9G9t8wk',
+                client_secret: '7RmxOpUmztJEILMUVZs8P9NNnuY0inxnNC4Rzjem',
                 provider: 'facebook',
                 access_token: tokenFacebook
             }
@@ -138,6 +139,7 @@ const Login = () => {
                                         color: '#fff',
                                       }}
                                     onSuccess={(response) => {
+                                        console.log(response)
                                         setFacebook(response.accessToken)
                                     }}
                                     onFail={(error) => {

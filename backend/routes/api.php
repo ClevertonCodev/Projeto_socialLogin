@@ -24,3 +24,5 @@ Route::prefix('v1')->middleware('auth:api')->group(function () {
 
 
 Route::post('resister', 'App\Http\Controllers\UserController@store');
+Route::post('/oauth/token', 'App\Http\Controllers\AuthController@issueToken');
+

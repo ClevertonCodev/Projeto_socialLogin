@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import TokenJWT from '../token';
-import { tokenToString } from 'typescript';
 
 const Navbar = () => {
   var [cookie, setCookie, removeCookie] = useCookies(['token']);
